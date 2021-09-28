@@ -5,6 +5,9 @@
   <title> Reservia </title>
   <meta charset="utf-8">
   <meta name="description" content="Reservia - Find a place for your dream vacation">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6a35fde4d1.js" crossorigin="anonymous"></script>
 </head>
@@ -12,28 +15,31 @@
   <img id="logo"
     src="Reservia ressources EN/images/logo/Reservia.svg"
     alt="Reservia Logo" title="Reservia logo">
+  <h3 id="Signup"><a href="#">Sign Up</a></h3>
   <ul>
-    <li><a href="#">Accomodations</a></li>
-    <li><a href="#">Activities</a></li>
-    <li><a href="#">Sign Up</a></li>
+    <li><a href="#accomodations">Accomodations</a></li>
+    <li><a href="#activities">Activities</a></li>
   </ul>
 </nav>
 <main>
-    <div id="header">
-        <h1> Find a place for your dream Vacation</h1>
-        <p>In nature or Downtown </p>
-    </div>
-    <div>
-        <i class="fas fa-map-marker-alt"><input type="text">Search</i>
+  <div id="header">
+    <h2> Find a place for your dream Vacation</h2>
+    <p>Downtown or in nature </p>
+  </div>
+  <div id="search">
+    <i class="fas fa-map-marker-alt"><input type="text">Search</i>
     </div>
     <div id="Filters">
-        <h2>Filters</h2>
-        <i class="fas fa-money-bill-wave"> Low Cost </i> <i class="fas fa-child"> Family-Friendly</i> <i class="fas fa-heart"> Romantic</i> <i class="fas fa-dog"> Pets Allowed</i>
-        <p><i class="fas fa-info"> More than 500 accomodations are available in this city</i></p>
+      <h3>Filters</h3>
+      <div class="Filter"><i class="fas fa-money-bill-wave"> </i> <h3>Low Cost</h3></div>
+      <div class="Filter"><i class="fas fa-child"></i> <h3>Family-Friendly</h3></div>
+      <div class="Filter"><i class="fas fa-heart"></i> <h3>Romantic</h3></div>
+      <div class="Filter"><i class="fas fa-dog"></i><h3>Pets Allowed</h3></div>
     </div>
+      <p><i class="fas fa-info"></i>More than 500 accomodations are available in this city</p>
     <!-- Section containting the "most popular" category of listings -->
     <div id="Mostpopular">
-        <h1> Most Popular <i class="fas fa-chart-line"></i></h1> 
+        <h2> Most Popular <i class="fas fa-chart-line"></i></h2> 
         <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
           <img id="acc3pic"
             src="Reservia ressources EN/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -51,7 +57,7 @@
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
         </Div>
         <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc4pic"
+            <img id="toutbleu"
               src="Reservia ressources EN/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Tout bleu et Blanc Hotel" title="Tout bleu et Blanc Hotel">
               <h2>Tout bleu et Blanc Hotel</h2>
@@ -62,54 +68,56 @@
     <!-- Section containting the "Accomodations in Marseille" category of listings  -->
     <div id="accomodations">
         <h1>Accomodations in Marseille</h1>
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-          <img id="acc7pic"
-            src="Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-            alt="Auberge la Cannebiere" title="Auberge la Cannebiere">
-          <h2>Auberge la Cannebiere</h2>
-          <p>Night starting at <B>25£</B></p>
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </Div>
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc5pic"
-              src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Hotel du port" title="Hotel du port">
-              <h2>Hotel du port</h2>
-              <p>Night starting at <B>52£</B></p>
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </Div>
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc9pic"
-              src="Reservia ressources EN/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-              alt="Les mouettes Hotel" title="Les mouettes Hotel">
-            <h2>Les mouettes Hotel</h2>
-            <p>Night starting at <B>76£</B></p>
+        <section id=accomodationbox>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+            <img id="acc7pic"
+              src="Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="Auberge la Cannebiere" title="Auberge la Cannebiere">
+            <h2>Auberge la Cannebiere</h2>
+            <p>Night starting at <B>25£</B></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </Div> 
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc1pic"
-              src="Reservia ressources EN/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-              alt="Hotel de la mer" title="Hotel de la mer">
-            <h2>Hotel de la mer</h2>
-            <p>Night starting at <B>46£</B></p>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-        </Div>
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-          <img id="acc8pic"
-            src="Reservia ressources EN/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-            alt="Auberge Le Panier" title="Auberge Le Panier">
-          <h2>Auberge Le Panier</h2>
-          <p>Night starting at <B>23£</B></p>
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </Div>
-        <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc6pic"
-              src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Hotel chez Amina" title="Hotel chez Amina">
-              <h2>Hotel chez Amina</h2>
-              <p>Night starting at <B>96£</B></p>
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </Div>
+          </Div>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="acc5pic"
+                src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Hotel du port" title="Hotel du port">
+                <h2>Hotel du port</h2>
+                <p>Night starting at <B>52£</B></p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </Div>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="acc9pic"
+                src="Reservia ressources EN/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt="Les mouettes Hotel" title="Les mouettes Hotel">
+              <h2>Les mouettes Hotel</h2>
+              <p>Night starting at <B>76£</B></p>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+          </Div>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="acc1pic"
+                src="Reservia ressources EN/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt="Hotel de la mer" title="Hotel de la mer">
+              <h2>Hotel de la mer</h2>
+              <p>Night starting at <B>46£</B></p>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+          </Div>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+            <img id="acc8pic"
+              src="Reservia ressources EN/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+              alt="Auberge Le Panier" title="Auberge Le Panier">
+            <h2>Auberge Le Panier</h2>
+            <p>Night starting at <B>23£</B></p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+          </Div>
+          <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="acc6pic"
+                src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Hotel chez Amina" title="Hotel chez Amina">
+                <h2>Hotel chez Amina</h2>
+                <p>Night starting at <B>96£</B></p>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </Div>
+        </section>
         <h2><a href="#">Show More</a></h2>
     </div>
     <!-- Section containting the "Activities in Marseille" category of listings  -->
@@ -126,6 +134,7 @@
               src="Reservia ressources EN/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="Pomengues Fort" title="Pomengues Fort ">
             <h2>Pomengues Fort </h2>
+        </Div>
         <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
             <img id="activ2pic"
               src="Reservia ressources EN/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
