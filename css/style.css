@@ -10,18 +10,51 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     text-align: end;
 }
+nav h3{
+    color: #0065FC;
+    text-align: end;
+}
 a {
     color: black;
 }
-#Signup {
-    color: #0065FC;
-}
 #search {
-    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border: #F2F2F2;
     border-style: solid;
-    border-color: whitesmoke;
-    width: min-content;
-    display: inline;
+    border-radius: 15px;
+}
+#search i{
+    color: black;
+    background-color:whitesmoke;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50px;
+}
+#search h3{
+    color: white;
+    background-color:#0065FC;
+    border-radius:  0px 10px 10px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#search input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-style: none;
 }
 main {
     font-family: 'Raleway', sans-serif;
