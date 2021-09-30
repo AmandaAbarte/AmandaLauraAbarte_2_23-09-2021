@@ -15,7 +15,7 @@
   <img id="logo"
     src="Reservia ressources EN/images/logo/Reservia.svg"
     alt="Reservia Logo" title="Reservia logo">
-  <h3 id="Signup"><a href="#">Sign Up</a></h3>
+  <h3 id="signup"><a href="#">Sign Up</a></h3>
   <ul>
     <li><a href="#accomodations">Accomodations</a></li>
     <li><a href="#activities">Activities</a></li>
@@ -27,53 +27,65 @@
     <p>Downtown or in nature </p>
   </div>
   <div id="search">
-    <i class="fas fa-map-marker-alt"><input type="text">Search</i>
-    </div>
+    <i class="fas fa-map-marker-alt"></i>
+    <input type="text">
+    <h3>Search</h3>
+  </div>
     <div id="Filters">
       <h3>Filters</h3>
-      <div class="Filter"><i class="fas fa-money-bill-wave"> </i> <h3>Low Cost</h3></div>
-      <div class="Filter"><i class="fas fa-child"></i> <h3>Family-Friendly</h3></div>
-      <div class="Filter"><i class="fas fa-heart"></i> <h3>Romantic</h3></div>
-      <div class="Filter"><i class="fas fa-dog"></i><h3>Pets Allowed</h3></div>
+      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-money-bill-wave"> </i> <h3>Low Cost</h3></div>
+      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-child"></i> <h3>Family-Friendly</h3></div>
+      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-heart"></i> <h3>Romantic</h3></div>
+      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-dog"></i><h3>Pets Allowed</h3></div>
     </div>
-      <p><i class="fas fa-info"></i>More than 500 accomodations are available in this city</p>
+      <div id="info">
+        <i class="fas fa-info"></i><p>More than 500 accomodations are available in this city</p>
+      </div>
     <!-- Section containting the "most popular" category of listings -->
-    <div id="Mostpopular">
+    <section id="Mostpopular">
         <h2> Most Popular <i class="fas fa-chart-line"></i></h2> 
-        <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
-          <img id="acc3pic"
-            src="Reservia ressources EN/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-            alt="Morning Sun Hotel" title="Morning Sun Hotel">
-          <h2>Morning Sun Hotel</h2>
-          <p>Night starting at <B>128£</B></p>
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </Div>
-        <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="acc2pic"
-              src="Reservia ressources EN/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt="Au Coeur de l'eau Bed and Breakfast" title="Au Coeur de l'eau Bed and Breakfast">
-            <h2>Au Coeur de l'eau Bed and Breakfast</h2>
-            <p>Night starting at <B>71£</B></p>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </Div>
-        <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="toutbleu"
-              src="Reservia ressources EN/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt="Tout bleu et Blanc Hotel" title="Tout bleu et Blanc Hotel">
-              <h2>Tout bleu et Blanc Hotel</h2>
-              <p>Night starting at <B>68£</B></p>
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </Div>
-    </div>
+        <div id="popularbox">
+          <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
+            <img id="acc3pic"
+              src="Reservia ressources EN/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              alt="Morning Sun Hotel" title="Morning Sun Hotel">
+            <div class="populartext">
+              <h3>Morning Sun Hotel</h3>
+              <p>Night starting at <B>128£</B></p>
+              <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </Div>
+          <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="acc2pic"
+                src="Reservia ressources EN/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Au Coeur de l'eau Bed and Breakfast" title="Au Coeur de l'eau Bed and Breakfast">
+              <div class="populartext">
+                <h3>Au Coeur de l'eau Bed and Breakfast</h3>
+                <p>Night starting at <B>71£</B></p>
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+          </Div>
+          <Div class="MostPopular" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="toutbleu"
+                src="Reservia ressources EN/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Tout bleu et Blanc Hotel" title="Tout bleu et Blanc Hotel">
+                <div class="populartext">
+                  <h3>Tout bleu et Blanc Hotel</h3>
+                  <p>Night starting at <B>68£</B></p>
+                  <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                </div>
+          </Div>
+        </div>
+    </section>
     <!-- Section containting the "Accomodations in Marseille" category of listings  -->
-    <div id="accomodations">
+    <section id="accomodations">
         <h1>Accomodations in Marseille</h1>
         <section id=accomodationbox>
           <Div class="Accomodation" onclick="location.href='#';" style="cursor: pointer;">
             <img id="acc7pic"
               src="Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               alt="Auberge la Cannebiere" title="Auberge la Cannebiere">
-            <h2>Auberge la Cannebiere</h2>
+            <h3>Auberge la Cannebiere</h3>
             <p>Night starting at <B>25£</B></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
           </Div>
@@ -81,7 +93,7 @@
               <img id="acc5pic"
                 src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="Hotel du port" title="Hotel du port">
-                <h2>Hotel du port</h2>
+                <h3>Hotel du port</h3>
                 <p>Night starting at <B>52£</B></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </Div>
@@ -89,7 +101,7 @@
               <img id="acc9pic"
                 src="Reservia ressources EN/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="Les mouettes Hotel" title="Les mouettes Hotel">
-              <h2>Les mouettes Hotel</h2>
+              <h3>Les mouettes Hotel</h3>
               <p>Night starting at <B>76£</B></p>
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
           </Div>
@@ -97,7 +109,7 @@
               <img id="acc1pic"
                 src="Reservia ressources EN/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt="Hotel de la mer" title="Hotel de la mer">
-              <h2>Hotel de la mer</h2>
+              <h3>Hotel de la mer</h3>
               <p>Night starting at <B>46£</B></p>
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
           </Div>
@@ -105,7 +117,7 @@
             <img id="acc8pic"
               src="Reservia ressources EN/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
               alt="Auberge Le Panier" title="Auberge Le Panier">
-            <h2>Auberge Le Panier</h2>
+            <h3>Auberge Le Panier</h3>
             <p>Night starting at <B>23£</B></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
           </Div>
@@ -113,56 +125,58 @@
               <img id="acc6pic"
                 src="Reservia ressources EN/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="Hotel chez Amina" title="Hotel chez Amina">
-                <h2>Hotel chez Amina</h2>
+                <h3>Hotel chez Amina</h3>
                 <p>Night starting at <B>96£</B></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </Div>
         </section>
         <h2><a href="#">Show More</a></h2>
-    </div>
+    </section>
     <!-- Section containting the "Activities in Marseille" category of listings  -->
-    <div id="activities">
+    <section id="activities">
         <h1> Activities in Marseille</h1>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ6pic"
-              src="Reservia ressources EN/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Old Port" title="Old Port">
-            <h2>Old Port</h2>
+        <Div id="activitybox">
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ6pic"
+                src="Reservia ressources EN/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Old Port" title="Old Port">
+              <h2>Old Port</h2>
+          </Div>
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ5pic"
+                src="Reservia ressources EN/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Pomengues Fort" title="Pomengues Fort ">
+              <h2>Pomengues Fort </h2>
+          </Div>
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ2pic"
+                src="Reservia ressources EN/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Frioul Island" title="Frioul Island">
+              <h2>Frioul Island</h2>
+          </Div>
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ3pic"
+                src="Reservia ressources EN/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Calanques National Park" title="Calanques National Park">
+              <h2>Calanques National Park</h2>
+          </Div>
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ1pic"
+                src="Reservia ressources EN/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+              <h2>Notre-Dame-de-la-Garde</h2>
+          </Div>
+          <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
+              <img id="activ4pic"
+                src="Reservia ressources EN/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Longchamp Park" title="Longchamp Park">
+              <h2>Longchamp Park</h2>
+          </Div>
         </Div>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ5pic"
-              src="Reservia ressources EN/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="Pomengues Fort" title="Pomengues Fort ">
-            <h2>Pomengues Fort </h2>
-        </Div>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ2pic"
-              src="Reservia ressources EN/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              alt="Frioul Island" title="Frioul Island">
-            <h2>Frioul Island</h2>
-        </Div>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ3pic"
-              src="Reservia ressources EN/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Calanques National Park" title="Calanques National Park">
-            <h2>Calanques National Park</h2>
-        </Div>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ1pic"
-              src="Reservia ressources EN/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
-            <h2>Notre-Dame-de-la-Garde</h2>
-        </Div>
-        <Div class="Activities" onclick="location.href='#';" style="cursor: pointer;">
-            <img id="activ4pic"
-              src="Reservia ressources EN/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt="Longchamp Park" title="Longchamp Park">
-            <h2>Longchamp Park</h2>
-        </Div>
-      </Div>
-    </div>
-    <footer>
-        <section id="About">
+    </section> 
+</main>
+<footer>
+        <section class="footer" id="About">
             <h2> About </h2>
             <ul>
                 <li><a href="#">Site Map</a></li>
@@ -170,14 +184,14 @@
                 <li><a href="#">Data and Privacy</a></li>
             </ul>
         </section>
-        <section id="OurAccomodations">
+        <section class="footer" id="OurAccomodations">
             <h2> Our Accomodations </h2>
             <ul>
                 <li><a href="#">Quality Assesment</a></li>
                 <li><a href="#">You have a hotel?</a></li>
             </ul>
         </section>
-        <section id="Assistance">
+        <section class="footer" id="Assistance">
             <h2> Assistance </h2>
             <ul>
                 <li><a href="#">Help Desk</a></li>
@@ -185,4 +199,3 @@
             </ul>
         </section>
     </footer>
-</main>
