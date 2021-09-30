@@ -14,33 +14,36 @@
 <nav>
   <img id="logo"
     src="Reservia ressources EN/images/logo/Reservia.svg"
-    alt="Reservia Logo" title="Reservia logo">
+    alt="Reservia Logo" title="Reservia logo" onclick="location.href='#';" style="cursor: pointer;">
   <h3 id="signup"><a href="#">Sign Up</a></h3>
   <ul>
     <li><a href="#accomodations">Accomodations</a></li>
     <li><a href="#activities">Activities</a></li>
   </ul>
 </nav>
-<main>
-  <div id="header">
-    <h2> Find a place for your dream Vacation</h2>
-    <p>Downtown or in nature </p>
-  </div>
-  <div id="search">
-    <i class="fas fa-map-marker-alt"></i>
-    <input type="text">
-    <h3>Search</h3>
-  </div>
-    <div id="Filters">
-      <h3>Filters</h3>
-      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-money-bill-wave"> </i> <h3>Low Cost</h3></div>
-      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-child"></i> <h3>Family-Friendly</h3></div>
-      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-heart"></i> <h3>Romantic</h3></div>
-      <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-dog"></i><h3>Pets Allowed</h3></div>
+<header>
+    <div id="header">
+      <h2> Find a place for your dream Vacation</h2>
+      <p>Downtown or in nature </p>
     </div>
-      <div id="info">
-        <i class="fas fa-info"></i><p>More than 500 accomodations are available in this city</p>
+    <div id="search">
+      <i class="fas fa-map-marker-alt"></i>
+      <input type="text">
+      <h3 onclick="location.href='#';" style="cursor: pointer;">Search</h3>
+    </div>
+      <div id="Filters">
+        <h3>Filters</h3>
+        <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-money-bill-wave"> </i> <h3>Low Cost</h3></div>
+        <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-child"></i> <h3>Family-Friendly</h3></div>
+        <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-heart"></i> <h3>Romantic</h3></div>
+        <div class="Filter" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-dog"></i><h3>Pets Allowed</h3></div>
       </div>
+        <div id="info">
+          <i class="fas fa-info"></i><p>More than 500 accomodations are available in this city</p>
+        </div>
+</header>
+<main>
+  
     <!-- Section containting the "most popular" category of listings -->
     <section id="Mostpopular">
         <h2> Most Popular <i class="fas fa-chart-line"></i></h2> 
