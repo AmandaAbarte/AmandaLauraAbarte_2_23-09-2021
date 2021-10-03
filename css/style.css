@@ -4,15 +4,22 @@ nav {
     grid-template-columns: 1fr 1fr;
     padding: 2%;
 }
+#signup {
+    display: flex;
+    justify-content: end;
+}
 nav ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 nav h3 a {
     text-align: end;
     color: #0065FC;
+}
+nav a:hover {
+    border-bottom:3px solid #0065FC;
 }
 a {
     color: black;
@@ -126,10 +133,6 @@ a:link{
 main {
     font-family: 'Raleway', sans-serif;
     padding: 2%;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 main p{
     display: block;
@@ -138,238 +141,6 @@ main p{
 .fa-star {
     color: #0065FC;
 }
-
-#Mostpopular {
-    width: 28%;
-    min-width: 350px;
-    height: 700px;
-    padding: 2%;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    border-width: 10px;
-    border-color: white;
-}
-#popularbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.MostPopular {
-    display: flex;
-    width: 100%;
-    min-width: 320px;
-    height: 150px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    margin-bottom: 10px;
-}
-.MostPopular img {
-    border-radius: 20px 0px 0px 20px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: 20% 10%;
-}
-.populartext {
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    padding-left: 10px;
-    padding-top: -10px;
-}
-#accomodations {
-    width: 62%;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    border-width: 10px;
-    border-color: white;
-    align-items: center;
-    padding: 2%;
-}
-#accomodationbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 500px;
-    width: 100%;
-}
-.Accomodation {
-    background-color: white;
-    width: 300px;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    margin: 10px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-}
-.Accomodation img {
-    display: flex;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 150px;
-    object-fit: none;
-}
-#activities{
-    border-radius: 25px;
-    margin-top: 50px;
-    float: unset;
-    clear: both;
-}
-#activitybox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.Activities {
-    margin: 25px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: min-content;
-    height: min-content;
-}
-.Activities img{
-    border-radius: 20px 20px 0px 0px;
-    width: 400px;
-}
-footer {
-    font-family: 'Raleway', sans-serif;
-    background-color: #F2F2F2;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-@media (min-width: 992.1px) and (max-width: 1280px){
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 0%;
-}
-#Mostpopular {
-    width: 100%;
-    height: max-content;
-    margin-bottom: 10px;
-}
-#popularbox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.MostPopular{
-    width: 28%;
-    min-width: 300px;
-}
-.populartext{
-}
-#accomodations{
-    width: 100%;
-}
-}
-
-@media (min-width: 600.1px) and (max-width: 992px) {
-main {
-    display: flex;
-    flex-direction: column;
-}
-#Mostpopular {
-    width: 100%;
-    padding: 4%;
-    margin-left: -20px;
-    background-color: #F2F2F2;
-    border-radius: 0px;
-    border-width: 0px;
-}
-.MostPopular {
-    display: flex;
-    width: 100%;
-    height: 150px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    transform: scale(0.9);
-}
-.MostPopular img {
-    border-radius: 20px 0px 0px 20px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: 20% 10%;
-    
-}
-#accomodations {
-    width: 100%;
-    background-color: white;
-    border-radius: 25px;
-    border-width: 10px;
-    border-color: white;
-    align-items: center;
-}
-#accomodationbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    min-width: 500px;
-}
-.Accomodation {
-    background-color: white;
-    width: 300px;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    margin: 10px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-}
-.Accomodation img {
-    display: flex;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 150px;
-    object-fit: none;
-}
-#activities{
-    border-radius: 25px;
-    margin-top: 50px;
-    float: unset;
-    clear: both;
-}
-#activitybox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.Activities {
-    margin: 25px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: min-content;
-    height: min-content;
-}
-.Activities img{
-    border-radius: 20px 20px 0px 0px;
-    width: 400px;
-}
-}
-@media (max-width: 600px) {
 #Mostpopular {
     float: none;
     width: 100%;
@@ -389,6 +160,7 @@ main {
     border-width: 5px;
     border-color: white;
     box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
 }
 .MostPopular img {
     border-radius: 20px 0px 0px 20px;
@@ -399,20 +171,20 @@ main {
     
 }
 #accomodations {
-    float: none;
     width: 100%;
-    align-items: unset;
     background-color: white;
     border-radius: 25px;
     border-width: 10px;
     border-color: white;
-    
     padding: 4%;
 }
 #accomodationbox {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-width: 500px;
+    width: 100%;
 }
 .Accomodation {
     background-color: white;
@@ -438,6 +210,11 @@ flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
 }
+#activitybox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .Activities {
     background-color: white;
     width: 95%;
@@ -455,14 +232,240 @@ align-items: center;
     object-fit: none;
 }
 footer {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
     background-color: #F2F2F2;
     padding: 4%;
+    display: flex;
+    flex-direction: column;
 }
 footer li{
     list-style-type: none;
 }
-}
 
-
+@media (min-width: 600.1px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #Mostpopular {
+        width: 100%;
+        padding: 4%;
+        margin-left: -20px;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        border-width: 0px;
+    }
+    .MostPopular {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+        transform: scale(0.9);
+    }
+    .MostPopular img {
+        border-radius: 20px 0px 0px 20px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 20% 10%;
+        
+    }
+    #accomodations {
+        width: 100%;
+        background-color: white;
+        border-radius: 25px;
+        border-width: 10px;
+        border-color: white;
+        align-items: center;
+    }
+    #accomodationbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-width: 500px;
+    }
+    .Accomodation {
+        background-color: white;
+        width: 300px;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: white;
+        margin: 10px;
+        box-shadow: 5px 5px 5px rgb(163, 163, 163);
+    }
+    .Accomodation img {
+        display: flex;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 150px;
+        object-fit: none;
+    }
+    #activities{
+        border-radius: 25px;
+        margin-top: 50px;
+        float: unset;
+        clear: both;
+    }
+    #activitybox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Activities {
+        margin: 25px;
+        box-shadow: 5px 5px 5px rgb(163, 163, 163);
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: min-content;
+        height: min-content;
+    }
+    .Activities img{
+        border-radius: 20px 20px 0px 0px;
+        width: 400px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    }
+    @media (min-width: 992.1px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    #Mostpopular {
+        width: 100%;
+        height: max-content;
+        margin-bottom: 10px;
+    }
+    #popularbox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .MostPopular{
+        width: 28%;
+        min-width: 300px;
+    }
+    .populartext{
+    }
+    #accomodations{
+        width: 100%;
+    }
+    }
+    
+    
+    @media screen and (min-width: 1280.1px){
+    main {
+        
+    }
+    #Mostpopular {
+        width: 28%;
+        min-width: 350px;
+        height: 700px;
+        padding: 2%;
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        border-width: 10px;
+        border-color: white;
+    }
+    #popularbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MostPopular {
+        display: flex;
+        width: 100%;
+        min-width: 320px;
+        height: 150px;
+        background-color: white;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+    }
+    .MostPopular img {
+        border-radius: 20px 0px 0px 20px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 20% 10%;
+    }
+    .populartext {
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        padding-left: 10px;
+        padding-top: -10px;
+    }
+    #accomodations {
+        width: 62%;
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        border-width: 10px;
+        border-color: white;
+        align-items: center;
+        padding: 2%;
+    }
+    #accomodationbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Accomodation {
+        background-color: white;
+        width: 300px;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: white;
+        margin: 10px;
+        box-shadow: 5px 5px 5px rgb(163, 163, 163);
+    }
+    .Accomodation img {
+        display: flex;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 150px;
+        object-fit: none;
+    }
+    #activities{
+        border-radius: 25px;
+        margin-top: 50px;
+        float: unset;
+        clear: both;
+    }
+    .Activities {
+        margin: 25px;
+        box-shadow: 5px 5px 5px rgb(163, 163, 163);
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: min-content;
+        height: min-content;
+    }
+    .Activities img{
+        border-radius: 20px 20px 0px 0px;
+        width: 400px;
+    }
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    }
+    
