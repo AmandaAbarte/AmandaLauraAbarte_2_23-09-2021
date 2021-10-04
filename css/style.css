@@ -17,6 +17,10 @@ nav h3 a {
 a {
     color: black;
 }
+header {
+    font-family: 'Raleway', sans-serif;
+    padding: 2%;
+}
 #search {
     display: flex;
     justify-content: space-around;
@@ -55,10 +59,6 @@ a {
     justify-content: center;
     height: 100%;
     border-style: none;
-}
-main {
-    font-family: 'Raleway', sans-serif;
-    padding: 2%;
 }
 h2 {
     font-weight: bolder;
@@ -123,6 +123,17 @@ a:link{
     justify-content: center;
     margin-right: 10px;
 }
+main {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+main p{
+    display: block;
+    margin-block-start: 0%;
+}
 .fa-star {
     color: #0065FC;
 }
@@ -131,9 +142,7 @@ a:link{
     width: 28%;
     min-width: 350px;
     height: 700px;
-    float: right;
     padding: 2%;
-    margin-left: 10px;
     background-color: #F2F2F2;
     border-radius: 25px;
     border-width: 10px;
@@ -146,7 +155,7 @@ a:link{
 }
 .MostPopular {
     display: flex;
-    width: 90%;
+    width: 100%;
     min-width: 320px;
     height: 150px;
     background-color: white;
@@ -167,24 +176,26 @@ a:link{
 .populartext {
     display: flex;
     flex-direction: column;
+    align-items: space-evenly;
     padding-left: 10px;
     padding-top: -10px;
 }
 #accomodations {
-    float: left;
-    width: 66%;
+    width: 62%;
     background-color: #F2F2F2;
     border-radius: 25px;
     border-width: 10px;
     border-color: white;
     align-items: center;
+    padding: 2%;
 }
 #accomodationbox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     min-width: 500px;
+    width: 100%;
 }
 .Accomodation {
     background-color: white;
@@ -206,8 +217,7 @@ a:link{
 #activities{
     border-radius: 25px;
     margin-top: 50px;
-    float: unset;
-    clear: both;
+    margin: 2%;
 }
 #activitybox {
     display: flex;
@@ -239,40 +249,75 @@ footer ul {
     margin: 0;
     padding: 0;
 }
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-    
-    #Mostpopular {
-        float: none;
-        width: 100%;
-        padding: 4%;
-        margin-left: -20px;
-        background-color: #F2F2F2;
-        border-radius: 0px;
-        border-width: 0px;
-    }
-    .MostPopular {
-        display: flex;
-        width: 95%;
-        height: 150px;
-        background-color: white;
-        border-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: white;
-        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    }
-    .MostPopular img {
-        border-radius: 20px 0px 0px 20px;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        object-position: 20% 10%;
-        
-    }
-#accomodations {
-    float: left;
-    width: 66%;
+@media (max-width: 1280px){
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+main h2{
+    padding-left: 2%;
+}
+#Mostpopular {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 10px;
+    padding: 0%;
+}
+#popularbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.MostPopular{
+    width: 28%;
+    min-width: 300px;
+}
+.populartext{
+}
+#accomodations{
+    width: 100%;
+    padding: 0%;
+}
+}
+
+@media (max-width: 992px) {
+main {
+    display: flex;
+    flex-direction: column;
+}
+#Mostpopular {
+    width: 100%;
     background-color: #F2F2F2;
+    border-radius: 0px;
+    border-width: 0px;
+}
+.MostPopular {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+    transform: scale(0.9);
+}
+.MostPopular img {
+    border-radius: 20px 0px 0px 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 20% 10%;
+    
+}
+#accomodations {
+    width: 100%;
+    padding: 0%;
+    background-color: white;
     border-radius: 25px;
     border-width: 10px;
     border-color: white;
@@ -283,7 +328,7 @@ footer ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-width: 500px;
+    min-width: 0px;
 }
 .Accomodation {
     background-color: white;
@@ -305,8 +350,6 @@ footer ul {
 #activities{
     border-radius: 25px;
     margin-top: 50px;
-    float: unset;
-    clear: both;
 }
 #activitybox {
     display: flex;
@@ -327,98 +370,92 @@ footer ul {
     width: 400px;
 }
 }
-
-@media only screen and (max-width: 600px) {
-    #Mostpopular {
-        float: none;
-        width: 100%;
-        padding: 4%;
-        margin-left: -20px;
-        background-color: #F2F2F2;
-        border-radius: 0px;
-        border-width: 0px;
-    }
-    .MostPopular {
-        display: flex;
-        width: 95%;
-        height: 150px;
-        background-color: white;
-        border-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: white;
-        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    }
-    .MostPopular img {
-        border-radius: 20px 0px 0px 20px;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        object-position: 20% 10%;
-        
-    }
-    #accomodations {
-        float: none;
-        width: 100%;
-        align-items: unset;
-        background-color: white;
-        border-radius: 25px;
-        border-width: 10px;
-        border-color: white;
-    }
-    #accomodationbox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .Accomodation {
-        background-color: white;
-        width: 95%;
-        border-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: white;
-        margin: 10px;
-        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    }
-    .Accomodation img {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 150px;
-        object-fit: none;
-    }
-    #activities{
+@media (max-width: 600px) {
+#Mostpopular {
     width: 100%;
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    }
-    .Activities {
-        background-color: white;
-        width: 95%;
-        border-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: white;
-        margin: 10px;
-        box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-    }
-    .Activities img{
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 150px;
-        object-fit: none;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        background-color: #F2F2F2;
-        padding: 4%;
-    }
-    footer li{
-        list-style-type: none;
-    }
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    border-width: 0px;
 }
+.MostPopular {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+}
+.MostPopular img {
+    border-radius: 20px 0px 0px 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 20% 10%;
+    
+}
+#accomodations {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color: white;
+}
+#accomodationbox {
+    display: flex;
+    align-items: center;
+}
+.Accomodation {
+    background-color: white;
+    width: 95%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    margin: 10px;
+    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+}
+.Accomodation img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 150px;
+    object-fit: none;
+}
+#activities{
+width: 100%;
+margin: 0%;
+border-radius: 25px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+}
+.Activities {
+    background-color: white;
+    width: 95%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    margin: 10px;
+    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
+}
+.Activities img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 150px;
+    object-fit: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+footer li{
+    list-style-type: none;
+}
+}
+
 
