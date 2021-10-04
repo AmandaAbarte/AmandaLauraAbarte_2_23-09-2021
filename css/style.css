@@ -137,7 +137,9 @@ main p{
 .fa-star {
     color: #0065FC;
 }
-
+.listingtext {
+    margin-left: 10px;
+}
 #Mostpopular {
     width: 28%;
     min-width: 350px;
@@ -232,6 +234,9 @@ main p{
     flex-wrap: wrap;
     width: min-content;
     height: min-content;
+}
+.Activities h2{
+    margin-left: 10px;
 }
 .Activities img{
     border-radius: 20px 20px 0px 0px;
