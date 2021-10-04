@@ -125,7 +125,6 @@ a:link{
 }
 main {
     font-family: 'Raleway', sans-serif;
-    padding: 2%;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -218,8 +217,7 @@ main p{
 #activities{
     border-radius: 25px;
     margin-top: 50px;
-    float: unset;
-    clear: both;
+    margin: 2%;
 }
 #activitybox {
     display: flex;
@@ -251,16 +249,21 @@ footer ul {
     margin: 0;
     padding: 0;
 }
-@media (min-width: 992.1px) and (max-width: 1280px){
+@media (max-width: 1280px){
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0%;
+}
+main h2{
+    padding-left: 2%;
 }
 #Mostpopular {
     width: 100%;
     height: max-content;
     margin-bottom: 10px;
+    padding: 0%;
 }
 #popularbox{
     display: flex;
@@ -276,18 +279,17 @@ main {
 }
 #accomodations{
     width: 100%;
+    padding: 0%;
 }
 }
 
-@media (min-width: 600.1px) and (max-width: 992px) {
+@media (max-width: 992px) {
 main {
     display: flex;
     flex-direction: column;
 }
 #Mostpopular {
     width: 100%;
-    padding: 4%;
-    margin-left: -20px;
     background-color: #F2F2F2;
     border-radius: 0px;
     border-width: 0px;
@@ -314,6 +316,7 @@ main {
 }
 #accomodations {
     width: 100%;
+    padding: 0%;
     background-color: white;
     border-radius: 25px;
     border-width: 10px;
@@ -325,7 +328,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-width: 500px;
+    min-width: 0px;
 }
 .Accomodation {
     background-color: white;
@@ -347,8 +350,6 @@ main {
 #activities{
     border-radius: 25px;
     margin-top: 50px;
-    float: unset;
-    clear: both;
 }
 #activitybox {
     display: flex;
@@ -371,10 +372,7 @@ main {
 }
 @media (max-width: 600px) {
 #Mostpopular {
-    float: none;
     width: 100%;
-    padding: 4%;
-    margin-left: -20px;
     background-color: #F2F2F2;
     border-radius: 0px;
     border-width: 0px;
@@ -399,19 +397,14 @@ main {
     
 }
 #accomodations {
-    float: none;
     width: 100%;
-    align-items: unset;
     background-color: white;
     border-radius: 25px;
     border-width: 10px;
     border-color: white;
-    
-    padding: 4%;
 }
 #accomodationbox {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .Accomodation {
@@ -432,6 +425,7 @@ main {
 }
 #activities{
 width: 100%;
+margin: 0%;
 border-radius: 25px;
 display: flex;
 flex-wrap: wrap;
@@ -458,7 +452,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 4%;
 }
 footer li{
     list-style-type: none;
