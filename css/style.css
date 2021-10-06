@@ -9,7 +9,6 @@ nav {
     grid-column: 4;
     grid-row: 1/2;
 }
-
 #navaccomodation{
     grid-column: 2;
     grid-row: 1/2;
@@ -394,15 +393,8 @@ main {
     border-width: 0px;
 }
 .MostPopular {
-    display: flex;
     width: 95%;
     height: 150px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
 }
 .MostPopular img {
     border-radius: 20px 0px 0px 20px;
@@ -422,27 +414,7 @@ main {
     align-items: center;
 }
 #accomodationbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     min-width: 0px;
-}
-.Accomodation {
-    background-color: white;
-    width: 300px;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    margin: 10px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-}
-.Accomodation img {
-    display: flex;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 150px;
-    object-fit: none;
 }
 #activities{
     border-radius: 25px;
@@ -453,17 +425,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-.Activities {
-    margin: 25px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: min-content;
-    height: min-content;
-}
 .Activities img{
-    border-radius: 20px 20px 0px 0px;
     width: 500px;
     height: 200px;
 }
@@ -480,24 +442,6 @@ nav h4 a:hover{
     border-radius: 0px;
     border-width: 0px;
 }
-.MostPopular {
-    display: flex;
-    height: 150px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-}
-.MostPopular img {
-    border-radius: 20px 0px 0px 20px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: 20% 10%;
-    
-}
 #accomodations {
     width: 100%;
     background-color: white;
@@ -506,38 +450,16 @@ nav h4 a:hover{
     border-color: white;
 }
 #accomodationbox {
-    display: flex;
     align-items: center;
 }
 .Accomodation {
-    background-color: white;
     width: 95%;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    margin: 10px;
-    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
-}
-.Accomodation img {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 150px;
-    object-fit: none;
 }
 #activities{
-width: 100%;
 margin: 0%;
-border-radius: 25px;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
 }
 .Activities {
-    background-color: white;
     width: 95%;
-    border-radius: 25px;
     border-style: solid;
     border-width: 5px;
     border-color: white;
