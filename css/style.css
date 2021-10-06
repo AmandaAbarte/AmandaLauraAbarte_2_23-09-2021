@@ -317,6 +317,7 @@ main h2{
     justify-content: space-around;
 }
 #activitybox{
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
 }
 #activity1{
