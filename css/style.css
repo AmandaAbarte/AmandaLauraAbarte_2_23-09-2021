@@ -217,10 +217,10 @@ main p{
     width: 300px;
     border-radius: 25px;
     border-style: solid;
-    border-width: 10px;
+    border-width: 5px;
     border-color: white;
     margin: 10px;
-    box-shadow: 5px 5px 5px rgb(163, 163, 163);
+    box-shadow: 4px 1px 25px 0px rgba(0,0,0,0.2);
 }
 .Accomodation img {
     display: flex;
