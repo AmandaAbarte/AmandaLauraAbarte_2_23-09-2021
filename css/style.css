@@ -52,6 +52,7 @@ header {
 #search {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 300px;
     height: 50px;
     border: #F2F2F2;
@@ -71,7 +72,7 @@ header {
 #search h3{
     color: white;
     background-color:#0065FC;
-    border-radius:  0px 10px 10px 0px ;
+    border-radius:  0px 14px 14px 0px ;
     display: flex;
     align-items: center;
     justify-content: center;
