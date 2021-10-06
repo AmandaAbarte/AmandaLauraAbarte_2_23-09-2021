@@ -9,6 +9,7 @@ nav {
     grid-column: 4;
     grid-row: 1/2;
 }
+
 #navaccomodation{
     grid-column: 2;
     grid-row: 1/2;
