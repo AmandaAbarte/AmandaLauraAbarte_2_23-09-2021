@@ -238,19 +238,8 @@ main p{
 }
 #activitybox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(auto-fit,335px);
-}
-.Activities img{
-    border-radius: 20px 20px 0px 0px;
-    width: 380px;
-    object-fit: none;
-}
-.activpicsmall{
-    height: 240px;
-}
-.activpiclarge{
-    height: 580px;
 }
 #activity1{
     grid-column: 1;
@@ -285,6 +274,17 @@ main p{
     width: min-content;
     height: min-content;
 }
+.Activities img{
+    border-radius: 20px 20px 0px 0px;
+    width: 350px;
+    object-fit: none;
+}
+.activpicsmall{
+    height: 240px;
+}
+.activpiclarge{
+    height: 580px;
+}
 .Activities h2{
     margin-left: 10px;
 }
@@ -296,6 +296,7 @@ footer {
     justify-content: space-around;
 }
 footer ul {
+    line-height: 30px;
     list-style-type: none;
     margin: 0;
     padding: 0;
