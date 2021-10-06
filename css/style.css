@@ -1,24 +1,53 @@
 nav {
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2%;
-    text-align: end;
+    grid-template-columns: 1fr 150px 120px 100px;
+    grid-template-rows: 1fr;
+    padding: 0px 2%;
+}
+#signup{
+    grid-column: 4;
+    grid-row: 1/2;
+}
+#navaccomodation{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+#navactivities{
+    grid-column: 3;
+    grid-row: 1/2;
 }
 nav h3 a {
     text-align: end;
     color: #0065FC;
 }
 nav h4 a{
+    padding: 25px 0px;
     font-size: 18px;
     color: black;
+}
+nav h4 a:hover{
+    border-top: 1px solid #0065FC;
 }
 a {
     color: black;
 }
+h2 {
+    font-weight: bolder;
+}
+h3 {
+    font-weight: bolder;
+}
+a:hover {
+    color: #0065FC;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+}
 header {
     font-family: 'Raleway', sans-serif;
-    padding: 2%;
+    padding: 0px 2%;
 }
 #search {
     display: flex;
@@ -56,19 +85,6 @@ header {
     justify-content: center;
     height: 100%;
     border-style: none;
-}
-h2 {
-    font-weight: bolder;
-}
-h3 {
-    font-weight: bolder;
-}
-a:hover {
-    color: #0065FC;
-    font-weight: bold;
-}
-a:link{
-    text-decoration: none;
 }
 #Filters {
     display: flex;
@@ -180,7 +196,7 @@ main p{
     padding-top: -10px;
 }
 #accomodations {
-    width: 62%;
+    width: 58%;
     background-color: #F2F2F2;
     border-radius: 25px;
     border-width: 10px;
@@ -217,6 +233,7 @@ main p{
     border-radius: 25px;
     margin-top: 50px;
     margin: 2%;
+    width: 100%;
 }
 #activitybox {
     display: grid;
@@ -346,6 +363,25 @@ main h2{
 }
 
 @media (max-width: 992px) {
+nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+#signup{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+#navaccomodation{
+    grid-column: 1;
+    grid-row: 2/3;
+    text-align: center;
+}
+#navactivities{
+    grid-column: 2;
+    grid-row: 2/3;
+    text-align: center;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -432,6 +468,11 @@ main {
 }
 }
 @media (max-width: 800px) {
+    
+nav h4 a:hover{
+    border-bottom: 1px solid #0065FC;
+    border-top: none;
+}
 #Mostpopular {
     width: 100%;
     background-color: #F2F2F2;
