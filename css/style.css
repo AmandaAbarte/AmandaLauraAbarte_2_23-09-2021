@@ -22,11 +22,28 @@ nav h3 a {
     color: #0065FC;
 }
 nav h4 a{
+    padding: 25px 0px;
     font-size: 18px;
     color: black;
 }
+nav h4 a:hover{
+    border-top: 1px solid #0065FC;
+}
 a {
     color: black;
+}
+h2 {
+    font-weight: bolder;
+}
+h3 {
+    font-weight: bolder;
+}
+a:hover {
+    color: #0065FC;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
 }
 header {
     font-family: 'Raleway', sans-serif;
@@ -68,19 +85,6 @@ header {
     justify-content: center;
     height: 100%;
     border-style: none;
-}
-h2 {
-    font-weight: bolder;
-}
-h3 {
-    font-weight: bolder;
-}
-a:hover {
-    color: #0065FC;
-    font-weight: bold;
-}
-a:link{
-    text-decoration: none;
 }
 #Filters {
     display: flex;
@@ -464,6 +468,11 @@ main {
 }
 }
 @media (max-width: 800px) {
+    
+nav h4 a:hover{
+    border-bottom: 1px solid #0065FC;
+    border-top: none;
+}
 #Mostpopular {
     width: 100%;
     background-color: #F2F2F2;
