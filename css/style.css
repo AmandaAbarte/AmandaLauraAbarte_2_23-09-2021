@@ -456,6 +456,9 @@ footer {
 footer li{
     list-style-type: none;
 }
+.footer {
+    margin-left: 30px;
+}
 }
 
 
