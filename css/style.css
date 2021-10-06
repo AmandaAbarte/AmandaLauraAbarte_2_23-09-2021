@@ -3,7 +3,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 150px 120px 100px;
     grid-template-rows: 1fr;
-    padding: 2%;
+    padding: 0px 2%;
 }
 #signup{
     grid-column: 4;
@@ -30,7 +30,7 @@ a {
 }
 header {
     font-family: 'Raleway', sans-serif;
-    padding: 2%;
+    padding: 0px 2%;
 }
 #search {
     display: flex;
@@ -192,7 +192,7 @@ main p{
     padding-top: -10px;
 }
 #accomodations {
-    width: 62%;
+    width: 58%;
     background-color: #F2F2F2;
     border-radius: 25px;
     border-width: 10px;
@@ -229,6 +229,7 @@ main p{
     border-radius: 25px;
     margin-top: 50px;
     margin: 2%;
+    width: 100%;
 }
 #activitybox {
     display: grid;
