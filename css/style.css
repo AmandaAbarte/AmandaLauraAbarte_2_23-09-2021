@@ -42,15 +42,15 @@ nav {
 nav img {
     cursor: pointer;
 }
-nav .signup {
+.signup {
   grid-column: 4;
   grid-row: 1/2;
 }
-nav .nav-accomodation {
+.nav-accomodation {
   grid-column: 2;
   grid-row: 1/2;
 }
-nav .nav-activities {
+.nav-activities {
   grid-column: 3;
   grid-row: 1/2;
 }
