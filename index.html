@@ -6,34 +6,24 @@
   <meta charset="utf-8">
   <meta name="description" content="Reservia - Find a place for your dream vacation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link href="css/responsive.css" type="text/css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6a35fde4d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- CSS Specificicity -->
-  <!--
-    Text Cases in Programming
-    - camelCase
-    - PascalCase
-    - snake-case (recommended for class names)
-    Don't mix two cases in your codebase.
-
-  -->
   <div class="container">
     <nav>
-      <img src="images/logo/Reservia.svg" alt="Reservia Logo" title="Reservia logo"
-        onclick="location.href='#';">
-        <h3 class="signup"><a href="#">Sign Up</a></h3>
-        <h4 class="nav-accomodation"><a href="#accomodations">Accomodations</a></h4>
-        <h4 class="nav-activities"><a href="#activities">Activities</a></h4>
+      <img src="images/logo/Reservia.svg" alt="Reservia Logo" title="Reservia logo">
+        <div class="signup"><a href="#">Sign Up</a></div>
+        <div class="nav-accomodation item"><a href="#accomodations">Accomodations</a></div>
+        <div class="nav-activities item"><a href="#activities">Activities</a></div>
     </nav>
+
     <header>
-      <div id="header">
+      <div>
         <h2> Find a place for your dream Vacation</h2>
         <p>Downtown or in nature </p>
       </div>
@@ -62,13 +52,14 @@
         <p>More than 500 accomodations are available in this city</p>
       </div>
     </header>
+
     <main>
       <!-- most popular places -->
       <section class="places">
         <h2> Most Popular <i class="icon-chart fas fa-chart-line"></i></h2>
         <div class="places-content">
           <div class="place">
-            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="" class="thumbnail">
             <div class="details">
               <h3>Morning Sun Hotel</h3>
@@ -98,7 +89,7 @@
             </div>
           </div>
           <div class="place">
-            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="" class="thumbnail">
             <div class="details">
               <h3>Morning Sun Hotel</h3>
@@ -114,22 +105,25 @@
           </div>
         </div>
       </section>
+
       <!-- accomodations avilable -->
-      <section class="accomodations">
+      <section class="accomodations" id="accomodations">
         <h2>Accomodations in Marseille</h2>
         <section class="accomodation-content">
-          <div class="accomodation" onclick="location.href='#'">
+          <div class="accomodation">
             <img class="accomodation-thumbnail"
               src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               alt="Auberge la Cannebiere" title="Auberge la Cannebiere">
             <div class="accomodation-details">
               <h3>Auberge la Cannebiere</h3>
               <p>Night starting at <B>25$</B></p>
-              <i class="icon-star fas fa-star"></i>
-              <i class="icon-star fas fa-star"></i>
-              <i class="icon-star fas fa-star"></i>
-              <i class="icon-star fas fa-star"></i>
-              <i class="icon-star far fa-star"></i>
+              <div class="rating">
+                <i class="icon-star fas fa-star"></i>
+                <i class="icon-star fas fa-star"></i>
+                <i class="icon-star fas fa-star"></i>
+                <i class="icon-star fas fa-star"></i>
+                <i class="icon-star far fa-star"></i>
+              </div>
             </div>
           </div>
           <div class="accomodation">
@@ -205,10 +199,11 @@
             </div>
           </div>
         </section>
-        <h3><a href="#">Show More</a></h3>
+        <h3 class="show-more"><a href="#">Show More</a></h3>
       </section>
+
       <!--  activities available  -->
-      <section class="activities">
+      <section class="activities" id="activities">
         <h2> Activities in Marseille</h2>
         <div class="activity-content">
           <div class="column">
@@ -252,8 +247,9 @@
         </div>
       </section>
     </main>
+
     <footer>
-      <section class="footer">
+      <section class="item">
         <h2> About </h2>
         <ul>
           <li><a href="#">Site Map</a></li>
@@ -261,14 +257,14 @@
           <li><a href="#">Data and Privacy</a></li>
         </ul>
       </section>
-      <section class="footer">
+      <section class="item">
         <h2> Our Accomodations </h2>
         <ul>
           <li><a href="#">Quality Assesment</a></li>
           <li><a href="#">You have a hotel?</a></li>
         </ul>
       </section>
-      <section class="footer">
+      <section class="item">
         <h2> Assistance </h2>
         <ul>
           <li><a href="#">Help Desk</a></li>
